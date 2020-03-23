@@ -69,3 +69,10 @@ class CPU:
     def run(self):
         """Run the CPU."""
         pass
+
+
+    def ram_read(self, MAR): #Memory Address Register (MAR)
+      return self.ram[MAR]
+    
+    def ram_write(self, MAR, MDR): #Memory Data Register (MDR)
+      self.reg[MAR] = MDR
